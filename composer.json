@@ -1,0 +1,11 @@
+{
+    "name": "tiro/php-my-Framework",
+    "description": "init",
+    "authors": [
+        {
+            "name": "tirozhang",
+            "email": "tirozhang@tencent.com"
+        }
+    ],
+    "require": {}
+}
