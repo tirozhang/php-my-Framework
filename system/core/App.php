@@ -2,6 +2,7 @@
 namespace system\core;
 
 use \system\config\MyDefine;
+use \system\business\Factory;
 
 /**
  * Framework App核心   
@@ -11,6 +12,7 @@ class App
 
     public static $baseRoot;
     public static $appRoot;
+    public static $controller;
     
     public static function registry($appPath)
     {
@@ -26,7 +28,7 @@ class App
     public static function init()
     {
         MyDefine::init();
-        //self::$controller = TXFactory::create('TXController');
+        self::$controller = Factory::create('\system\business\Controller','myController');
     }
 
     public static function run()

@@ -1,5 +1,4 @@
 <?php
-
 use \system\core\App;
 
 date_default_timezone_set('Asia/Shanghai');
